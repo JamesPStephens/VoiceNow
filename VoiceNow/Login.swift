@@ -1,5 +1,5 @@
 //
-//  CreateAnAccount.swift
+//  Login.swift
 //  VoiceNow
 //
 //  Created by James Stephens on 12/08/2017.
@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class CreateAnAccount: UIViewController {
+
+class Login: UIViewController {
+    
+    private var activityView: NVActivityIndicatorView!
     
     
     let backgroundImage: UIImageView = {
@@ -35,8 +39,9 @@ class CreateAnAccount: UIViewController {
         welcome.lineBreakMode = .byWordWrapping
         welcome.numberOfLines = 2
         welcome.textColor = UIColor.white
+        welcome.alpha = 0
         welcome.textAlignment = .center
-        welcome.font = UIFont(name: "Roboto-Thin", size: 20)
+        welcome.font = UIFont(name: "Roboto-Thin", size: 22)
         welcome.translatesAutoresizingMaskIntoConstraints = false
         return welcome
     }()
@@ -47,7 +52,7 @@ class CreateAnAccount: UIViewController {
         email.font = UIFont(name: "RobotoCondensed-Light", size: 14)
         email.attributedPlaceholder = NSAttributedString(string: "Email address", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
         email.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-        email.layer.cornerRadius = 10
+        email.layer.cornerRadius = 20
         email.translatesAutoresizingMaskIntoConstraints = false
         return email
     }()
@@ -58,7 +63,7 @@ class CreateAnAccount: UIViewController {
         password.font = UIFont(name: "RobotoCondensed-Light", size: 14)
         password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
         password.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-        password.layer.cornerRadius = 10
+        password.layer.cornerRadius = 20
         password.translatesAutoresizingMaskIntoConstraints = false
         password.isSecureTextEntry = true
         return password
@@ -76,21 +81,48 @@ class CreateAnAccount: UIViewController {
     }()
     let vnCreateAccount: UIButton = {
         let account = UIButton()
-        account.setTitle("Already have an account? Tap here to login.", for: .normal)
+        account.setTitle("Don't have an account. Tap here to create one.", for: .normal)
         account.setTitleColor(UIColor.white, for: .normal)
         account.backgroundColor = UIColor.clear
         account.titleLabel!.font = UIFont(name: "Roboto-Thin", size: 16)
         account.titleLabel!.lineBreakMode = .byWordWrapping
         account.titleLabel!.textAlignment = .center
         account.translatesAutoresizingMaskIntoConstraints = false
+        account.addTarget(self, action: #selector(createAccountPresent), for: .touchUpInside)
         return account
     }()
     
+    func loadingAnimation() {
+        if activityView == nil {
+            activityView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 80.0, height: 80.0), type: NVActivityIndicatorType.ballRotateChase, color: UIColor.white, padding: 0.0)
+            // add subview
+            view.addSubview(activityView)
+            // autoresizing mask
+            activityView.translatesAutoresizingMaskIntoConstraints = false
+            // constraints
+            activityView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            activityView.topAnchor.constraint(equalTo: vnSubmit.bottomAnchor, constant: 25).isActive = true
+        }
+        activityView.startAnimating()
+    }
+    func stopAnimation() {
+        activityView.stopAnimating()
+    }
+    
+    func createAccountPresent() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFade
+        view.window!.layer.add(transition, forKey: kCATransition)
+        present(CreateAccount(), animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        view.backgroundColor = UIColor(red: 255, green: 225, blue: 255, alpha: 1)
+        view.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        
         
         //Subviews//
         view.addSubview(backgroundImage)
@@ -102,7 +134,6 @@ class CreateAnAccount: UIViewController {
         view.addSubview(vnWelcome)
         
         
-        
         backgroundImage.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         backgroundImage.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         
@@ -111,10 +142,11 @@ class CreateAnAccount: UIViewController {
         vnTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         vnTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
         
-        vnWelcome.widthAnchor.constraint(equalToConstant: 132).isActive = true
-        vnWelcome.heightAnchor.constraint(equalToConstant: 48).isActive = true
-        vnWelcome.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        vnWelcome.topAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
+        vnWelcome.widthAnchor.constraint(equalToConstant: 145).isActive = true
+        vnWelcome.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        vnWelcome.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        vnWelcome.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 130).isActive = true
+        
         
         vnEmail.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnEmail.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -135,19 +167,7 @@ class CreateAnAccount: UIViewController {
         vnCreateAccount.heightAnchor.constraint(equalToConstant: 30).isActive = true
         vnCreateAccount.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         vnCreateAccount.topAnchor.constraint(equalTo: view.topAnchor, constant: 600).isActive = true
-
-    
         
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

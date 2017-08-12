@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F92DFDD8587DD352F935159 /* Pods_VoiceNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0DF525505C35BDB3A42D00 /* Pods_VoiceNow.framework */; };
 		82CB5C9F1F3F797A00A45048 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C77D1F3F485D00CC9F83 /* Info.plist */; };
 		82CB5CA01F3F799800A45048 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5C9C1F3F78E800A45048 /* Roboto-Thin.ttf */; };
 		82CB5CA11F3F799B00A45048 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5C9D1F3F78FA00A45048 /* RobotoCondensed-Light.ttf */; };
 		82CB5CA41F3F7AC000A45048 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CA31F3F7AC000A45048 /* Blur.swift */; };
 		82CB5CA61F3F824200A45048 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CA51F3F824200A45048 /* HideKeyboard.swift */; };
 		82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */; };
-		82D4C7741F3F485D00CC9F83 /* CreateAnAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7731F3F485D00CC9F83 /* CreateAnAccount.swift */; };
+		82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7731F3F485D00CC9F83 /* Login.swift */; };
 		82D4C7771F3F485D00CC9F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C7751F3F485D00CC9F83 /* Main.storyboard */; };
 		82D4C7791F3F485D00CC9F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C7781F3F485D00CC9F83 /* Assets.xcassets */; };
 		82D4C77C1F3F485D00CC9F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C77A1F3F485D00CC9F83 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,8 @@
 		82D4C7921F3F485D00CC9F83 /* VoiceNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7911F3F485D00CC9F83 /* VoiceNowUITests.swift */; };
 		82D4C7A01F3F4CCC00CC9F83 /* SetupProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C79F1F3F4CCC00CC9F83 /* SetupProfile.swift */; };
 		82D4C7A21F3F4CE600CC9F83 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7A11F3F4CE600CC9F83 /* CreateAccount.swift */; };
+		A9DE2E56DBB31586BB904C19 /* Pods_VoiceNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E242E50CFF351A158EF4CBB9 /* Pods_VoiceNowTests.framework */; };
+		B46ABBC7CD2BE4CC23B4E80B /* Pods_VoiceNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC1F0E46F9AB467BC0A730F /* Pods_VoiceNowUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06776300BDC78117AF7712D5 /* Pods-VoiceNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNowUITests/Pods-VoiceNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F0DF525505C35BDB3A42D00 /* Pods_VoiceNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A78C89A127179D5E595434 /* Pods-VoiceNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNowUITests/Pods-VoiceNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70CA23C4FFD70956A1A6F359 /* Pods-VoiceNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNow/Pods-VoiceNow.debug.xcconfig"; sourceTree = "<group>"; };
 		82CB5C9C1F3F78E800A45048 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../VoiceNow App Assets/RobotoTTF/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		82CB5C9D1F3F78FA00A45048 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Light.ttf"; path = "../../../VoiceNow App Assets/RobotoTTF/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		82CB5CA31F3F7AC000A45048 /* Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		82CB5CA51F3F824200A45048 /* HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		82D4C76E1F3F485D00CC9F83 /* VoiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82D4C7731F3F485D00CC9F83 /* CreateAnAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnAccount.swift; sourceTree = "<group>"; };
+		82D4C7731F3F485D00CC9F83 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		82D4C7761F3F485D00CC9F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82D4C7781F3F485D00CC9F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D4C77B1F3F485D00CC9F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +67,11 @@
 		82D4C7931F3F485D00CC9F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82D4C79F1F3F4CCC00CC9F83 /* SetupProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupProfile.swift; sourceTree = "<group>"; };
 		82D4C7A11F3F4CE600CC9F83 /* CreateAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		89FB1B4937363CF7A51200CF /* Pods-VoiceNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNow/Pods-VoiceNow.release.xcconfig"; sourceTree = "<group>"; };
+		BAC23F3F93696E9F84E92871 /* Pods-VoiceNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNowTests/Pods-VoiceNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDC1F0E46F9AB467BC0A730F /* Pods_VoiceNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E242E50CFF351A158EF4CBB9 /* Pods_VoiceNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE45DC7222F8E0718B6CF2B0 /* Pods-VoiceNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceNowTests/Pods-VoiceNowTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F92DFDD8587DD352F935159 /* Pods_VoiceNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DE2E56DBB31586BB904C19 /* Pods_VoiceNowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46ABBC7CD2BE4CC23B4E80B /* Pods_VoiceNowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +127,8 @@
 				82D4C7851F3F485D00CC9F83 /* VoiceNowTests */,
 				82D4C7901F3F485D00CC9F83 /* VoiceNowUITests */,
 				82D4C76F1F3F485D00CC9F83 /* Products */,
+				915054496DB87C5099BAEBB5 /* Pods */,
+				8D75391720C9D9801E2D35E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,7 +148,7 @@
 				82CB5CA21F3F7AB000A45048 /* Extensions */,
 				82CB5C9B1F3F78BE00A45048 /* Fonts */,
 				82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */,
-				82D4C7731F3F485D00CC9F83 /* CreateAnAccount.swift */,
+				82D4C7731F3F485D00CC9F83 /* Login.swift */,
 				82D4C79F1F3F4CCC00CC9F83 /* SetupProfile.swift */,
 				82D4C7A11F3F4CE600CC9F83 /* CreateAccount.swift */,
 				82D4C7751F3F485D00CC9F83 /* Main.storyboard */,
@@ -160,6 +177,29 @@
 			path = VoiceNowUITests;
 			sourceTree = "<group>";
 		};
+		8D75391720C9D9801E2D35E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F0DF525505C35BDB3A42D00 /* Pods_VoiceNow.framework */,
+				E242E50CFF351A158EF4CBB9 /* Pods_VoiceNowTests.framework */,
+				BDC1F0E46F9AB467BC0A730F /* Pods_VoiceNowUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		915054496DB87C5099BAEBB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70CA23C4FFD70956A1A6F359 /* Pods-VoiceNow.debug.xcconfig */,
+				89FB1B4937363CF7A51200CF /* Pods-VoiceNow.release.xcconfig */,
+				EE45DC7222F8E0718B6CF2B0 /* Pods-VoiceNowTests.debug.xcconfig */,
+				BAC23F3F93696E9F84E92871 /* Pods-VoiceNowTests.release.xcconfig */,
+				06776300BDC78117AF7712D5 /* Pods-VoiceNowUITests.debug.xcconfig */,
+				11A78C89A127179D5E595434 /* Pods-VoiceNowUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82D4C7961F3F485D00CC9F83 /* Build configuration list for PBXNativeTarget "VoiceNow" */;
 			buildPhases = (
+				1EC15C5DB589AE370617F61E /* [CP] Check Pods Manifest.lock */,
 				82D4C76A1F3F485D00CC9F83 /* Sources */,
 				82D4C76B1F3F485D00CC9F83 /* Frameworks */,
 				82D4C76C1F3F485D00CC9F83 /* Resources */,
+				20F85C44D6BDE9CF14881790 /* [CP] Embed Pods Frameworks */,
+				9E5DE9CA534C2A2073DD806A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82D4C7991F3F485D00CC9F83 /* Build configuration list for PBXNativeTarget "VoiceNowTests" */;
 			buildPhases = (
+				42CB003FC523299F06E4A3C4 /* [CP] Check Pods Manifest.lock */,
 				82D4C77E1F3F485D00CC9F83 /* Sources */,
 				82D4C77F1F3F485D00CC9F83 /* Frameworks */,
 				82D4C7801F3F485D00CC9F83 /* Resources */,
+				9C6119EA92D1FFDBAD3E2E85 /* [CP] Embed Pods Frameworks */,
+				B9EDF767A8AC9ECB1EF45E8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82D4C79C1F3F485D00CC9F83 /* Build configuration list for PBXNativeTarget "VoiceNowUITests" */;
 			buildPhases = (
+				B5DB7A90F801B768C3AA51A7 /* [CP] Check Pods Manifest.lock */,
 				82D4C7891F3F485D00CC9F83 /* Sources */,
 				82D4C78A1F3F485D00CC9F83 /* Frameworks */,
 				82D4C78B1F3F485D00CC9F83 /* Resources */,
+				326E6D3EA2A5836398B89EAC /* [CP] Embed Pods Frameworks */,
+				9D2376D1FAA6D96A58F3D073 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,12 +344,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EC15C5DB589AE370617F61E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20F85C44D6BDE9CF14881790 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNow/Pods-VoiceNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		326E6D3EA2A5836398B89EAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNowUITests/Pods-VoiceNowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CB003FC523299F06E4A3C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6119EA92D1FFDBAD3E2E85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNowTests/Pods-VoiceNowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D2376D1FAA6D96A58F3D073 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNowUITests/Pods-VoiceNowUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5DE9CA534C2A2073DD806A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNow/Pods-VoiceNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5DB7A90F801B768C3AA51A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EDF767A8AC9ECB1EF45E8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceNowTests/Pods-VoiceNowTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82D4C76A1F3F485D00CC9F83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D4C7741F3F485D00CC9F83 /* CreateAnAccount.swift in Sources */,
+				82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */,
 				82D4C7A01F3F4CCC00CC9F83 /* SetupProfile.swift in Sources */,
 				82CB5CA41F3F7AC000A45048 /* Blur.swift in Sources */,
 				82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */,
@@ -457,6 +644,7 @@
 		};
 		82D4C7971F3F485D00CC9F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70CA23C4FFD70956A1A6F359 /* Pods-VoiceNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q986W5R478;
@@ -470,6 +658,7 @@
 		};
 		82D4C7981F3F485D00CC9F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FB1B4937363CF7A51200CF /* Pods-VoiceNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q986W5R478;
@@ -483,6 +672,7 @@
 		};
 		82D4C79A1F3F485D00CC9F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE45DC7222F8E0718B6CF2B0 /* Pods-VoiceNowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +688,7 @@
 		};
 		82D4C79B1F3F485D00CC9F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC23F3F93696E9F84E92871 /* Pods-VoiceNowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +704,7 @@
 		};
 		82D4C79D1F3F485D00CC9F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06776300BDC78117AF7712D5 /* Pods-VoiceNowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q986W5R478;
@@ -527,6 +719,7 @@
 		};
 		82D4C79E1F3F485D00CC9F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A78C89A127179D5E595434 /* Pods-VoiceNowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q986W5R478;
