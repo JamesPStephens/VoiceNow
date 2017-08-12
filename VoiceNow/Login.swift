@@ -77,6 +77,7 @@ class Login: UIViewController {
         title.titleLabel!.lineBreakMode = .byWordWrapping
         title.titleLabel!.textAlignment = .center
         title.translatesAutoresizingMaskIntoConstraints = false
+        title.addTarget(self, action: #selector(loadingAnimation), for: .touchUpInside)
         return title
     }()
     let vnCreateAccount: UIButton = {
@@ -101,7 +102,7 @@ class Login: UIViewController {
             activityView.translatesAutoresizingMaskIntoConstraints = false
             // constraints
             activityView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            activityView.topAnchor.constraint(equalTo: vnSubmit.bottomAnchor, constant: 25).isActive = true
+            activityView.topAnchor.constraint(equalTo: vnSubmit.bottomAnchor, constant: 20).isActive = true
         }
         activityView.startAnimating()
     }
@@ -117,12 +118,23 @@ class Login: UIViewController {
         view.window!.layer.add(transition, forKey: kCATransition)
         present(CreateAccount(), animated: true, completion: nil)
     }
+    
+    func animateWelcome() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                self.vnWelcome.alpha = 1
+            } , completion: {(completed) in
+                //Do nothing
+            })
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         view.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         
+        animateWelcome()
         
         //Subviews//
         view.addSubview(backgroundImage)
