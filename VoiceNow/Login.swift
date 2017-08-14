@@ -23,6 +23,18 @@ class Login: UIViewController {
         bg.addBlurEffect()
         return bg
     }()
+    let backgroundView: UIView = {
+        let bgv = UIView()
+        bgv.translatesAutoresizingMaskIntoConstraints = false
+        bgv.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+        return bgv
+    }()
+    let vnBottomBox: UIView = {
+        let box = UIView()
+        box.translatesAutoresizingMaskIntoConstraints = false
+        box.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        return box
+    }()
     let vnTitle: UILabel = {
         let title = UILabel()
         title.text = "VoiceNow"
@@ -49,20 +61,24 @@ class Login: UIViewController {
         let email = UITextField()
         email.textAlignment = .center
         email.textColor = UIColor.white
-        email.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        email.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         email.attributedPlaceholder = NSAttributedString(string: "Email address", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        email.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         email.layer.cornerRadius = 20
         email.translatesAutoresizingMaskIntoConstraints = false
         return email
+    }()
+    let vnLine: UIView = {
+        let line = UIView()
+        line.backgroundColor = UIColor.white
+        line.translatesAutoresizingMaskIntoConstraints = false
+        return line
     }()
     let vnPassword: UITextField = {
         let password = UITextField()
         password.textAlignment = .center
         password.textColor = UIColor.white
-        password.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        password.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        password.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         password.layer.cornerRadius = 20
         password.translatesAutoresizingMaskIntoConstraints = false
         password.isSecureTextEntry = true
@@ -72,6 +88,7 @@ class Login: UIViewController {
         let title = UIButton()
         title.setTitle("Submit", for: .normal)
         title.backgroundColor = UIColor.clear
+        title.layer.cornerRadius = 10
         title.setTitleColor(UIColor.white, for: .normal)
         title.titleLabel!.font = UIFont(name: "Roboto-Thin", size: 40)
         title.titleLabel!.lineBreakMode = .byWordWrapping
@@ -92,7 +109,6 @@ class Login: UIViewController {
         account.addTarget(self, action: #selector(createAccountPresent), for: .touchUpInside)
         return account
     }()
-    
     func loadingAnimation() {
         if activityView == nil {
             activityView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 80.0, height: 80.0), type: NVActivityIndicatorType.ballRotateChase, color: UIColor.white, padding: 0.0)
@@ -138,16 +154,22 @@ class Login: UIViewController {
         
         //Subviews//
         view.addSubview(backgroundImage)
+        view.addSubview(backgroundView)
         view.addSubview(vnTitle)
         view.addSubview(vnEmail)
+        view.addSubview(vnLine)
         view.addSubview(vnPassword)
         view.addSubview(vnSubmit)
         view.addSubview(vnCreateAccount)
         view.addSubview(vnWelcome)
+        view.addSubview(vnBottomBox)
         
         
         backgroundImage.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         backgroundImage.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        
+        backgroundView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        backgroundView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         
         vnTitle.widthAnchor.constraint(equalToConstant: 219).isActive = true
         vnTitle.heightAnchor.constraint(equalToConstant: 58).isActive = true
@@ -156,29 +178,39 @@ class Login: UIViewController {
         
         vnWelcome.widthAnchor.constraint(equalToConstant: 145).isActive = true
         vnWelcome.heightAnchor.constraint(equalToConstant: 55).isActive = true
-        vnWelcome.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        vnWelcome.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 130).isActive = true
+        vnWelcome.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        vnWelcome.topAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
         
         
         vnEmail.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        vnEmail.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnEmail.topAnchor.constraint(equalTo: view.topAnchor, constant: 225).isActive = true
+        vnEmail.heightAnchor.constraint(equalToConstant: 38).isActive = true
+        vnEmail.bottomAnchor.constraint(equalTo: vnLine.topAnchor, constant: -5).isActive = true
         vnEmail.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
+        vnLine.widthAnchor.constraint(equalTo: vnEmail.widthAnchor).isActive = true
+        vnLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        vnLine.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        vnLine.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
         vnPassword.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        vnPassword.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 325).isActive = true
+        vnPassword.heightAnchor.constraint(equalToConstant: 38).isActive = true
+        vnPassword.topAnchor.constraint(equalTo: vnLine.bottomAnchor, constant: 5).isActive = true
         vnPassword.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        vnSubmit.widthAnchor.constraint(equalToConstant: 125).isActive = true
-        vnSubmit.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        vnSubmit.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        vnSubmit.heightAnchor.constraint(equalToConstant: 50).isActive = true
         vnSubmit.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         vnSubmit.topAnchor.constraint(equalTo: view.topAnchor, constant: 450).isActive = true
         
         vnCreateAccount.widthAnchor.constraint(equalToConstant: 200).isActive = true
         vnCreateAccount.heightAnchor.constraint(equalToConstant: 30).isActive = true
         vnCreateAccount.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        vnCreateAccount.topAnchor.constraint(equalTo: view.topAnchor, constant: 600).isActive = true
+        vnCreateAccount.topAnchor.constraint(equalTo: view.topAnchor, constant: 625).isActive = true
+        view.bringSubview(toFront: vnCreateAccount)
+        
+        vnBottomBox.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        vnBottomBox.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        vnBottomBox.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
     }
 }
