@@ -31,6 +31,25 @@ class CreateAccount: UIViewController {
         box.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         return box
     }()
+    let vnNLine: UIView = {
+        let line = UIView()
+        line.translatesAutoresizingMaskIntoConstraints = false
+        line.backgroundColor = UIColor.white
+        return line
+    }()
+    let vnEPLine: UIView = {
+        let line = UIView()
+        line.translatesAutoresizingMaskIntoConstraints = false
+        line.backgroundColor = UIColor.white
+        return line
+    }()
+    let vnCPLine: UIView = {
+        let line = UIView()
+        line.translatesAutoresizingMaskIntoConstraints = false
+        line.backgroundColor = UIColor.white
+        return line
+    }()
+    
 
     let vnTitle: UILabel = {
         let title = UILabel()
@@ -57,9 +76,8 @@ class CreateAccount: UIViewController {
         let name = UITextField()
         name.textAlignment = .center
         name.textColor = UIColor.white
-        name.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        name.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         name.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        name.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         name.layer.cornerRadius = 20
         name.translatesAutoresizingMaskIntoConstraints = false
         return name
@@ -68,9 +86,8 @@ class CreateAccount: UIViewController {
         let email = UITextField()
         email.textAlignment = .center
         email.textColor = UIColor.white
-        email.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        email.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         email.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        email.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         email.layer.cornerRadius = 20
         email.translatesAutoresizingMaskIntoConstraints = false
         return email
@@ -79,9 +96,8 @@ class CreateAccount: UIViewController {
         let password = UITextField()
         password.textAlignment = .center
         password.textColor = UIColor.white
-        password.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        password.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        password.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         password.layer.cornerRadius = 20
         password.translatesAutoresizingMaskIntoConstraints = false
         password.isSecureTextEntry = true
@@ -91,9 +107,8 @@ class CreateAccount: UIViewController {
         let confirmPassword = UITextField()
         confirmPassword.textAlignment = .center
         confirmPassword.textColor = UIColor.white
-        confirmPassword.font = UIFont(name: "RobotoCondensed-Light", size: 14)
+        confirmPassword.font = UIFont(name: "RobotoCondensed-Light", size: 25)
         confirmPassword.attributedPlaceholder = NSAttributedString(string: "Confirm password", attributes: [NSForegroundColorAttributeName : UIColor.white.withAlphaComponent(0.5)])
-        confirmPassword.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         confirmPassword.layer.cornerRadius = 20
         confirmPassword.translatesAutoresizingMaskIntoConstraints = false
         confirmPassword.isSecureTextEntry = true
@@ -108,6 +123,7 @@ class CreateAccount: UIViewController {
         next.titleLabel!.lineBreakMode = .byWordWrapping
         next.titleLabel!.textAlignment = .center
         next.translatesAutoresizingMaskIntoConstraints = false
+        next.addTarget(self, action: #selector(profilePresent), for: .touchUpInside)
         return next
     }()
     let vnbackToLogin: UIButton = {
@@ -131,6 +147,14 @@ class CreateAccount: UIViewController {
         view.window!.layer.add(transition, forKey: kCATransition)
         present(Login(), animated: true, completion: nil)
     }
+    func profilePresent() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionReveal
+        view.window!.layer.add(transition, forKey: kCATransition)
+        present(setupProfile(), animated: true, completion: nil)
+    }
 
     
     override func viewDidLoad() {
@@ -141,6 +165,9 @@ class CreateAccount: UIViewController {
         view.addSubview(backgroundImage)
         view.addSubview(backgroundView)
         view.addSubview(vnBottomBox)
+        view.addSubview(vnNLine)
+        view.addSubview(vnEPLine)
+        view.addSubview(vnCPLine)
         view.addSubview(vnTitle)
         view.addSubview(vnFields)
         view.addSubview(vnName)
@@ -164,26 +191,26 @@ class CreateAccount: UIViewController {
         vnFields.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnFields.heightAnchor.constraint(equalToConstant: 55).isActive = true
         vnFields.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        vnFields.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        vnFields.topAnchor.constraint(equalTo: view.topAnchor, constant: 110).isActive = true
         
         vnName.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnName.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnName.topAnchor.constraint(equalTo: view.topAnchor, constant: 180).isActive = true
+        vnName.topAnchor.constraint(equalTo: view.topAnchor, constant: 199).isActive = true
         vnName.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         vnEmail.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnEmail.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnEmail.topAnchor.constraint(equalTo: view.topAnchor, constant: 260).isActive = true
+        vnEmail.topAnchor.constraint(equalTo: view.topAnchor, constant: 279).isActive = true
         vnEmail.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         vnPassword.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnPassword.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 340).isActive = true
+        vnPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 359).isActive = true
         vnPassword.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         vnConfirmPassword.widthAnchor.constraint(equalToConstant: 250).isActive = true
         vnConfirmPassword.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        vnConfirmPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 420).isActive = true
+        vnConfirmPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 439).isActive = true
         vnConfirmPassword.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         vnNext.widthAnchor.constraint(equalToConstant: 125).isActive = true
@@ -200,6 +227,21 @@ class CreateAccount: UIViewController {
         vnBottomBox.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         vnBottomBox.heightAnchor.constraint(equalToConstant: 50).isActive = true
         vnBottomBox.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        vnNLine.widthAnchor.constraint(equalTo: vnName.widthAnchor).isActive = true
+        vnNLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        vnNLine.topAnchor.constraint(equalTo: view.topAnchor, constant: 248).isActive = true
+        vnNLine.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        vnEPLine.widthAnchor.constraint(equalTo: vnName.widthAnchor).isActive = true
+        vnEPLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        vnEPLine.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        vnEPLine.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        vnCPLine.widthAnchor.constraint(equalTo: vnName.widthAnchor).isActive = true
+        vnCPLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        vnCPLine.topAnchor.constraint(equalTo: view.topAnchor, constant: 418).isActive = true
+        vnCPLine.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
     
 
