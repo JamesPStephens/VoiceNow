@@ -1,19 +1,18 @@
 //
-//  VoiceList.swift
+//  VoiceRecorder.swift
 //  VoiceNow
 //
-//  Created by James Stephens on 15/08/2017.
+//  Created by James Stephens on 16/08/2017.
 //  Copyright © 2017 VoiceNow. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class VoiceList: UITableViewController {
+class VoiceRecorder: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.red
     }
-    
 }
