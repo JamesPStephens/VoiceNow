@@ -13,6 +13,7 @@
 		82CB5CA11F3F799B00A45048 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5C9D1F3F78FA00A45048 /* RobotoCondensed-Light.ttf */; };
 		82CB5CA41F3F7AC000A45048 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CA31F3F7AC000A45048 /* Blur.swift */; };
 		82CB5CA61F3F824200A45048 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CA51F3F824200A45048 /* HideKeyboard.swift */; };
+		82CB5CAA1F4364F500A45048 /* VoiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CA91F4364F500A45048 /* VoiceList.swift */; };
 		82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */; };
 		82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7731F3F485D00CC9F83 /* Login.swift */; };
 		82D4C7771F3F485D00CC9F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C7751F3F485D00CC9F83 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		82CB5C9D1F3F78FA00A45048 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Light.ttf"; path = "../../../VoiceNow App Assets/RobotoTTF/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		82CB5CA31F3F7AC000A45048 /* Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		82CB5CA51F3F824200A45048 /* HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		82CB5CA91F4364F500A45048 /* VoiceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceList.swift; sourceTree = "<group>"; };
 		82D4C76E1F3F485D00CC9F83 /* VoiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D4C7731F3F485D00CC9F83 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				82CB5C9B1F3F78BE00A45048 /* Fonts */,
 				82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */,
 				82D4C7731F3F485D00CC9F83 /* Login.swift */,
+				82CB5CA91F4364F500A45048 /* VoiceList.swift */,
 				82D4C79F1F3F4CCC00CC9F83 /* SetupProfile.swift */,
 				82D4C7A11F3F4CE600CC9F83 /* CreateAccount.swift */,
 				82D4C7751F3F485D00CC9F83 /* Main.storyboard */,
@@ -493,6 +496,7 @@
 				82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */,
 				82CB5CA61F3F824200A45048 /* HideKeyboard.swift in Sources */,
 				82D4C7A21F3F4CE600CC9F83 /* CreateAccount.swift in Sources */,
+				82CB5CAA1F4364F500A45048 /* VoiceList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

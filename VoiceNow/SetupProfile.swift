@@ -61,16 +61,53 @@ class setupProfile: UIViewController {
         line.backgroundColor = UIColor.white
         return line
     }()
+    let vnBackToAccount: UIButton = {
+        let account = UIButton()
+        account.setTitle("Back", for: .normal)
+        account.setTitleColor(UIColor.white, for: .normal)
+        account.backgroundColor = UIColor.clear
+        account.titleLabel!.font = UIFont(name: "Roboto-Thin", size: 16)
+        account.titleLabel!.lineBreakMode = .byWordWrapping
+        account.titleLabel!.textAlignment = .center
+        account.translatesAutoresizingMaskIntoConstraints = false
+        account.addTarget(self, action: #selector(presentAccount), for: .touchUpInside)
+        return account
+    }()
+    let vnSkip: UIButton = {
+        let skip = UIButton()
+        skip.setTitle("Skip", for: .normal)
+        skip.setTitleColor(UIColor.white, for: .normal)
+        skip.backgroundColor = UIColor.clear
+        skip.titleLabel!.font = UIFont(name: "Roboto-Thin", size: 16)
+        skip.titleLabel!.lineBreakMode = .byWordWrapping
+        skip.titleLabel!.textAlignment = .center
+        skip.translatesAutoresizingMaskIntoConstraints = false
+        skip.addTarget(self, action: #selector(skipToList), for: .touchUpInside)
+        return skip
+    }()
     let vnBottomBox: UIView = {
         let box = UIView()
         box.translatesAutoresizingMaskIntoConstraints = false
         box.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         return box
     }()
-    
-    
-    
-    
+    func presentAccount() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionReveal
+        view.window!.layer.add(transition, forKey: kCATransition)
+        present(CreateAccount(), animated: true, completion: nil)
+    }
+    func skipToList() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionReveal
+        view.window!.layer.add(transition, forKey: kCATransition)
+        present(VoiceList(), animated: true, completion: nil)
+        
+    }
     
     
     override func viewDidLoad() {
@@ -85,6 +122,8 @@ class setupProfile: UIViewController {
         view.addSubview(vnCompanyName)
         view.addSubview(vnLine)
         view.addSubview(vnBottomBox)
+        view.addSubview(vnBackToAccount)
+        view.addSubview(vnSkip)
         
         backgroundImage.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         backgroundImage.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
@@ -115,6 +154,18 @@ class setupProfile: UIViewController {
         vnBottomBox.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         vnBottomBox.heightAnchor.constraint(equalToConstant: 50).isActive = true
         vnBottomBox.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        vnBackToAccount.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        vnBackToAccount.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        vnBackToAccount.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 25).isActive = true
+        vnBackToAccount.topAnchor.constraint(equalTo: view.topAnchor, constant: 625).isActive = true
+        view.bringSubview(toFront: vnBackToAccount)
+        
+        vnSkip.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        vnSkip.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        vnSkip.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -25).isActive = true
+        vnSkip.topAnchor.constraint(equalTo: view.topAnchor, constant: 625).isActive = true
+        view.bringSubview(toFront: vnSkip)
         
         
     }
