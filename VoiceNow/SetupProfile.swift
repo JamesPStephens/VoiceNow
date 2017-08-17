@@ -39,7 +39,7 @@ class setupProfile: UIViewController {
     let vnProfilePicture: UIImageView = {
         let picture = UIImageView()
         picture.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-        picture.layer.cornerRadius = 100
+        picture.layer.cornerRadius = 75
         picture.layer.borderColor = UIColor.white.cgColor
         picture.layer.borderWidth = 1
         picture.translatesAutoresizingMaskIntoConstraints = false
@@ -136,8 +136,8 @@ class setupProfile: UIViewController {
         vnTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         vnTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
         
-        vnProfilePicture.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        vnProfilePicture.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        vnProfilePicture.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        vnProfilePicture.heightAnchor.constraint(equalToConstant: 150).isActive = true
         vnProfilePicture.topAnchor.constraint(equalTo: vnTitle.bottomAnchor, constant: 25).isActive = true
         vnProfilePicture.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         

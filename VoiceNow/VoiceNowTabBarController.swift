@@ -14,14 +14,20 @@ class VoiceNowTabController: UITabBarController {
     override func viewDidLoad() {
          super.viewDidLoad()
          tabBarViews()
-         navBarBlur()
+//       getImageBlur()
         
     }
     
+    func getImageBlur(){
+        let bounds = self.navigationController?.navigationBar.bounds as CGRect!
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        visualEffectView.frame = bounds!
+        self.navigationController?.navigationBar.addSubview(visualEffectView)
+    }
+    
+    
         func tabBarViews() {
-        
-
-            
+    
             let voiceList = VoiceList()
             let voiceRecorder = VoiceRecorder()
             let voiceNowProfile = VoiceNowProfile()
