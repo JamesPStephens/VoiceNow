@@ -17,6 +17,8 @@
 		82CB5CAC1F44751D00A45048 /* VoiceNowTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CAB1F44751D00A45048 /* VoiceNowTabBarController.swift */; };
 		82CB5CAE1F44761D00A45048 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CAD1F44761D00A45048 /* VoiceRecorder.swift */; };
 		82CB5CB01F44764F00A45048 /* VoiceNowProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CAF1F44764F00A45048 /* VoiceNowProfile.swift */; };
+		82CB5CB61F45BB4600A45048 /* TabBarBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CB51F45BB4600A45048 /* TabBarBlurEffect.swift */; };
+		82CB5CB81F45BB5400A45048 /* NavBarBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CB71F45BB5400A45048 /* NavBarBlurEffect.swift */; };
 		82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */; };
 		82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7731F3F485D00CC9F83 /* Login.swift */; };
 		82D4C7771F3F485D00CC9F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C7751F3F485D00CC9F83 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		82CB5CAB1F44751D00A45048 /* VoiceNowTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceNowTabBarController.swift; sourceTree = "<group>"; };
 		82CB5CAD1F44761D00A45048 /* VoiceRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
 		82CB5CAF1F44764F00A45048 /* VoiceNowProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceNowProfile.swift; sourceTree = "<group>"; };
+		82CB5CB51F45BB4600A45048 /* TabBarBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarBlurEffect.swift; sourceTree = "<group>"; };
+		82CB5CB71F45BB5400A45048 /* NavBarBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarBlurEffect.swift; sourceTree = "<group>"; };
 		82D4C76E1F3F485D00CC9F83 /* VoiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D4C7731F3F485D00CC9F83 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			children = (
 				82CB5CA31F3F7AC000A45048 /* Blur.swift */,
 				82CB5CA51F3F824200A45048 /* HideKeyboard.swift */,
+				82CB5CB51F45BB4600A45048 /* TabBarBlurEffect.swift */,
+				82CB5CB71F45BB5400A45048 /* NavBarBlurEffect.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -502,7 +508,9 @@
 				82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */,
 				82D4C7A01F3F4CCC00CC9F83 /* SetupProfile.swift in Sources */,
 				82CB5CA41F3F7AC000A45048 /* Blur.swift in Sources */,
+				82CB5CB61F45BB4600A45048 /* TabBarBlurEffect.swift in Sources */,
 				82CB5CAC1F44751D00A45048 /* VoiceNowTabBarController.swift in Sources */,
+				82CB5CB81F45BB5400A45048 /* NavBarBlurEffect.swift in Sources */,
 				82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */,
 				82CB5CB01F44764F00A45048 /* VoiceNowProfile.swift in Sources */,
 				82CB5CA61F3F824200A45048 /* HideKeyboard.swift in Sources */,

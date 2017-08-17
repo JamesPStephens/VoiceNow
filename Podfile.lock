@@ -1,12 +1,15 @@
 PODS:
+  - ESTabBarController-swift (2.4)
   - NVActivityIndicatorView (3.6.1)
 
 DEPENDENCIES:
+  - ESTabBarController-swift
   - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
+  ESTabBarController-swift: af496895039ba10ae60bf825473c45f23fc5c8b6
   NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
 
-PODFILE CHECKSUM: f04a02c6a3ff7f2c1dc0e321d68223363a82cada
+PODFILE CHECKSUM: dbdc843fb456fcc1978b2a3f8cd0ea770f15a858
 
 COCOAPODS: 1.2.1

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4C4C3A74D9038783F7F6FE3FBC7E9CA"
-               BuildableName = "Pods_VoiceNow.framework"
-               BlueprintName = "Pods-VoiceNow"
+               BlueprintIdentifier = "5E707FF8CB3D090CCB960ECC250DC20F"
+               BuildableName = "ESTabBarController_swift.framework"
+               BlueprintName = "ESTabBarController-swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4C4C3A74D9038783F7F6FE3FBC7E9CA"
-            BuildableName = "Pods_VoiceNow.framework"
-            BlueprintName = "Pods-VoiceNow"
+            BlueprintIdentifier = "5E707FF8CB3D090CCB960ECC250DC20F"
+            BuildableName = "ESTabBarController_swift.framework"
+            BlueprintName = "ESTabBarController-swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

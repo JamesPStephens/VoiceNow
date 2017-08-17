@@ -6,7 +6,7 @@ target 'VoiceNow' do
   use_frameworks!
 
 pod 'NVActivityIndicatorView'
-
+pod 'ESTabBarController-swift'
 
   # Pods for VoiceNow
 
