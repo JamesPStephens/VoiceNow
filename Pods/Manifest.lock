@@ -1,15 +1,18 @@
 PODS:
   - ESTabBarController-swift (2.4)
+  - lottie-ios (1.5.1)
   - NVActivityIndicatorView (3.6.1)
 
 DEPENDENCIES:
   - ESTabBarController-swift
+  - lottie-ios
   - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   ESTabBarController-swift: af496895039ba10ae60bf825473c45f23fc5c8b6
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
   NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
 
-PODFILE CHECKSUM: dbdc843fb456fcc1978b2a3f8cd0ea770f15a858
+PODFILE CHECKSUM: e32b6c2e998bcc0815e38817d8261b204d5c0c46
 
 COCOAPODS: 1.2.1

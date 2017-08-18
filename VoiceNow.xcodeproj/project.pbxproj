@@ -19,6 +19,9 @@
 		82CB5CB01F44764F00A45048 /* VoiceNowProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CAF1F44764F00A45048 /* VoiceNowProfile.swift */; };
 		82CB5CB61F45BB4600A45048 /* TabBarBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CB51F45BB4600A45048 /* TabBarBlurEffect.swift */; };
 		82CB5CB81F45BB5400A45048 /* NavBarBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB5CB71F45BB5400A45048 /* NavBarBlurEffect.swift */; };
+		82CB5CBC1F464EE400A45048 /* EditButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5CBB1F464EE400A45048 /* EditButton.json */; };
+		82CB5CBE1F46541400A45048 /* Success.json in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5CBD1F46541400A45048 /* Success.json */; };
+		82CB5CC01F46561A00A45048 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 82CB5CBF1F46561A00A45048 /* data.json */; };
 		82D4C7721F3F485D00CC9F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */; };
 		82D4C7741F3F485D00CC9F83 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4C7731F3F485D00CC9F83 /* Login.swift */; };
 		82D4C7771F3F485D00CC9F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4C7751F3F485D00CC9F83 /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		82CB5CAF1F44764F00A45048 /* VoiceNowProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceNowProfile.swift; sourceTree = "<group>"; };
 		82CB5CB51F45BB4600A45048 /* TabBarBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarBlurEffect.swift; sourceTree = "<group>"; };
 		82CB5CB71F45BB5400A45048 /* NavBarBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarBlurEffect.swift; sourceTree = "<group>"; };
+		82CB5CBB1F464EE400A45048 /* EditButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EditButton.json; path = "../../../VoiceNow App Assets/AE_JSON/EditButton.json"; sourceTree = "<group>"; };
+		82CB5CBD1F46541400A45048 /* Success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Success.json; path = ../../../../../Downloads/Success.json; sourceTree = "<group>"; };
+		82CB5CBF1F46561A00A45048 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../../../MoonMelon/moonmelon/moon-melon/moon melon/data.json"; sourceTree = "<group>"; };
 		82D4C76E1F3F485D00CC9F83 /* VoiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4C7711F3F485D00CC9F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D4C7731F3F485D00CC9F83 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 				82CB5CA91F4364F500A45048 /* VoiceList.swift */,
 				82D4C79F1F3F4CCC00CC9F83 /* SetupProfile.swift */,
 				82D4C7A11F3F4CE600CC9F83 /* CreateAccount.swift */,
+				82CB5CBD1F46541400A45048 /* Success.json */,
+				82CB5CBB1F464EE400A45048 /* EditButton.json */,
+				82CB5CBF1F46561A00A45048 /* data.json */,
 				82D4C7751F3F485D00CC9F83 /* Main.storyboard */,
 				82D4C7781F3F485D00CC9F83 /* Assets.xcassets */,
 				82D4C77A1F3F485D00CC9F83 /* LaunchScreen.storyboard */,
@@ -342,6 +351,9 @@
 				82CB5C9F1F3F797A00A45048 /* Info.plist in Resources */,
 				82D4C77C1F3F485D00CC9F83 /* LaunchScreen.storyboard in Resources */,
 				82D4C7791F3F485D00CC9F83 /* Assets.xcassets in Resources */,
+				82CB5CBE1F46541400A45048 /* Success.json in Resources */,
+				82CB5CBC1F464EE400A45048 /* EditButton.json in Resources */,
+				82CB5CC01F46561A00A45048 /* data.json in Resources */,
 				82D4C7771F3F485D00CC9F83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

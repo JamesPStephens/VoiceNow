@@ -7,6 +7,7 @@ target 'VoiceNow' do
 
 pod 'NVActivityIndicatorView'
 pod 'ESTabBarController-swift'
+pod 'lottie-ios'
 
   # Pods for VoiceNow
 

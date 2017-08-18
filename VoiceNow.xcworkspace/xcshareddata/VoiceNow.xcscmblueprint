@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5EC1587DD995C0F454011E4573924AA82671A866",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5EC1587DD995C0F454011E4573924AA82671A866" : 9223372036854775807,
+    "921B6217CEB6F5363D5609DB3D91485ED5ABCD7B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "44ADCC2A-F5CC-428B-8113-2FDC3F7CDC1E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5EC1587DD995C0F454011E4573924AA82671A866" : "VoiceNow\/",
+    "921B6217CEB6F5363D5609DB3D91485ED5ABCD7B" : "..\/..\/MoonMelon\/moonmelon"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VoiceNow",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VoiceNow.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MMBlU3\/VoiceNow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC1587DD995C0F454011E4573924AA82671A866"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/reqyo\/moonmelon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "921B6217CEB6F5363D5609DB3D91485ED5ABCD7B"
+    }
+  ]
+}
